@@ -177,9 +177,9 @@ It is possible to use this package as an `ENTRYPOINT` script inside a Dockerfile
 ```dockerfile
 FROM node:alpine
 
-ENTRYPOINT yarn react-env --env APP_ENV
+ENTRYPOINT ["yarn", "react-env", "--env", "APP_ENV"]
 
-CMD yarn start
+CMD ["yarn", "start"]
 ```
 
 ### Arguments and parameters
